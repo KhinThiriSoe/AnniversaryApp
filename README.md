@@ -10,3 +10,5 @@ What I've learned after app:
 - how to create dialog
 - how to use gif in splashscreen
 - how to customize editText
+
+project done on November, 2015
