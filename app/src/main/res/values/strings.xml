@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AnniApp</string>
+
+    <string name="choose_date">Choose start date</string>
+    <!--MainActivity-->
+    <string name="calculate">CALCULATE</string>
+    <string name="developer_name">Khin Thiri Soe</string>
+    <string name="developer_degree">Studying M.C.Sc (Thesis) at University of Computer Studies, Mandalay. Proficient in Java, Android, HTML5, CSS3 &amp; more. Developing enterprise software as a freelance deveoper. Accept outsource from other companies as well.</string>
+    <string name="title_activity_about">AboutActivity</string>
+</resources>

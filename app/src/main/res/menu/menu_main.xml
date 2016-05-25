@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/action_save"-->
+        <!--android:icon="@drawable/ic_action_action_done"-->
+        <!--android:orderInCategory="1"-->
+        <!--android:title="Save"-->
+        <!--app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_about_app"
+        android:icon="@drawable/ic_action_about"
+        android:orderInCategory="2"
+        android:title="About App"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_about_dev"
+        android:icon="@drawable/ic_action_about"
+        android:orderInCategory="2"
+        android:title="About Me"
+        app:showAsAction="never" />
+</menu>

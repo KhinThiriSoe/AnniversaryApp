@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_normal"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:gravity="center_vertical"
+            android:text="Welcome to AnniApp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2.3dp"
+        android:background="@drawable/dropshow" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin"
+        android:src="@drawable/ic_imageinsert"
+        app:civ_border_color="@color/border_color"
+        app:civ_border_width="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/boy_name"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/editextstyle"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="BOY NAME"
+            android:inputType="text"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_lovesign" />
+
+        <EditText
+            android:id="@+id/girl_name"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="5"
+            android:background="@drawable/editextstyle"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="GIRL NAME"
+            android:inputType="text"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choosedate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="@string/choose_date"
+            android:textColor="@color/ColorPrimaryDark"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/setDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:text=" ----"
+            android:textColor="@color/ColorPrimaryDark"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalDays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="\???"
+            android:textColor="@color/ColorPrimaryDark"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Days"
+            android:textColor="@color/ColorPrimaryDark"
+            android:textSize="16sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/pink_normal"
+        android:onClick="btnCalculate"
+        android:padding="8dp"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:text="@string/calculate"
+        android:textSize="5sp"
+        android:typeface="serif" />
+
+</LinearLayout>

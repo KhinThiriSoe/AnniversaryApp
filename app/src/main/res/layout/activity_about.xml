@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.khinthirisoe.nearestclinics.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/developer_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/developer_name"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/thiri"
+        app:civ_border_color="@color/border_color"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/developer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:gravity="center"
+        android:text="@string/developer_name"
+        android:textStyle="bold"
+        android:textSize="@dimen/developer_name" />
+
+    <TextView
+        android:id="@+id/developer_degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developer_name"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:gravity="center"
+        android:text="@string/developer_degree"
+        android:textSize="@dimen/developer_degree" />
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developer_degree"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:orientation="horizontal">
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonGmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/pink_normal"
+            android:onClick="btnGmail"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_gmail" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonFacebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/pink_normal"
+            android:onClick="btnFacebook"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_facebook" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonTwitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/pink_normal"
+            android:onClick="btnTwitter"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_twitter" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonLinkedin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:background="@color/pink_normal"
+            android:onClick="btnLinkedin"
+            app:animate="false"
+            app:iconDrawable="@drawable/ic_action_linkedin_icon" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_low">#FFEBEE</color>
+    <color name="pink_normal">#E91E63</color>
+
+    <color name="ColorPrimaryDark">#C51162</color>
+    <color name="border_color">#F48FB1</color>
+</resources>
