@@ -17,12 +17,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
@@ -37,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private int month_x;
     private int day_x;
     static final int DATE_DIALOG_ID = 999;
+
     private ImageView img_calendar;
     private TextView txt_choosedate;
     private TextView txt_setdate;
@@ -128,12 +127,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnCalculate(View view) {
 
-        EditText et_boy_name = (EditText) findViewById(R.id.boy_name);
-        EditText et_girl_name = (EditText) findViewById(R.id.girl_name);
-
-        et_boy_name.setFocusable(false);
-        et_girl_name.setFocusable(false);
-
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.DAY_OF_MONTH, day_x);
         cal.set(Calendar.MONTH, month_x - 1);
@@ -163,7 +156,6 @@ public class MainActivity extends AppCompatActivity {
         });
         AlertDialog alert = builder.create();
         alert.show();
-
     }
 
     private void takeScreenshot() {
@@ -186,8 +178,6 @@ public class MainActivity extends AppCompatActivity {
             fos.flush();
             fos.close();
             openScreenshot(imagePath);
-        } catch (FileNotFoundException e) {
-            Log.e("GREC", e.getMessage(), e);
         } catch (IOException e) {
             Log.e("GREC", e.getMessage(), e);
         }
@@ -205,7 +195,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -221,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setMessage("You can easily know how long have u been together.\n" +
                         "It’s a simple app, you can add couple photo," +
                         "type the names of couple, and choose date from calendar " +
-                        "and tap Calculate to get result.");
+                        "and tap CALCULATE to get result.");
                 builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();

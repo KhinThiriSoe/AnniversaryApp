@@ -61,11 +61,14 @@
             android:layout_marginTop="30dp"
             android:layout_weight="5"
             android:background="@drawable/editextstyle"
+            android:cursorVisible="true"
             android:ellipsize="start"
+            android:fontFamily="serif"
             android:gravity="center"
             android:hint="BOY NAME"
             android:inputType="text"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="0dp"
@@ -85,11 +88,14 @@
             android:layout_marginTop="30dp"
             android:layout_weight="5"
             android:background="@drawable/editextstyle"
+            android:cursorVisible="true"
             android:ellipsize="start"
+            android:fontFamily="serif"
             android:gravity="center"
             android:hint="GIRL NAME"
             android:inputType="text"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -172,10 +178,10 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/standard_margin"
         android:background="@color/pink_normal"
         android:onClick="btnCalculate"
         android:padding="8dp"
-        android:layout_marginTop="@dimen/standard_margin"
         android:text="@string/calculate"
         android:textSize="5sp"
         android:typeface="serif" />
