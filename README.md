@@ -9,3 +9,4 @@ What I've learned after app:
 - how to take screenshot and share
 - how to create dialog
 - how to use gif in splashscreen
+- how to customize editText
