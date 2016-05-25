@@ -1,6 +1,6 @@
 # AnniversaryApp
  
- This is my first app.
+ My first app
  
 - can easily know how long you've been together
 
