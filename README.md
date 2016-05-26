@@ -2,7 +2,7 @@
  
  My first app
  
-- can easily know how long you've been together
+- can easily check how long you've been together
 
 What I've learned after the app:
 - how to calculate datetime
@@ -11,4 +11,4 @@ What I've learned after the app:
 - how to use gif in splashscreen
 - how to customize editText
 
-project done on November, 2015
+project done on August, 2015
