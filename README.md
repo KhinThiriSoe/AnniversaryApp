@@ -4,7 +4,7 @@
  
 - can easily know how long you've been together
 
-What I've learned after app:
+What I've learned after the app:
 - how to calculate datetime
 - how to take screenshot and share
 - how to create dialog
