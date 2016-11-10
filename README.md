@@ -1,8 +1,8 @@
-#AnniversaryApp
-### This is my first android app what I've learned after writing this app 
+# AnniversaryApp
+#### This is my first android app. 
  - can easily check how long you've been together
  
-### What I've learned after the app:
+### What I've learned after writing this app:
 - how to calculate datetime
 - how to take screenshot and share
 - how to create dialog
