@@ -1,5 +1,6 @@
 # AnniversaryApp
-#### This is my first android app. The app contains the following feature:
+#### This is my first android app. 
+#### The app contains the following feature:
  - can easily check how long you've been together
  
 #### What I've learned after writing this app:
