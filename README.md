@@ -1,6 +1,6 @@
 # This is my first android app I’ve ever written. 
  - can easily check how long you've been together
- - 
+ 
 ### What I've learned after the app:
 - how to calculate datetime
 - how to take screenshot and share
